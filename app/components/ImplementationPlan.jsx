@@ -227,10 +227,15 @@ export default function ImplementationCarousel() {
   return (
     <main className="min-h-screen w-full bg-slate-900 py-12 px-6 flex flex-col items-center">
 
-      <h1 className="text-4xl font-bold text-white mb-4">Implementation Plan</h1>
-      <p className="text-cyan-200 max-w-xl text-center mb-12">
-        A three-phase roadmap for developing, regulating, and deploying nanomedicine in Canada.
-      </p>
+      <section className="text-center pt-8">
+        <h1 className="text-4xl font-bold text-cyan-400 mb-4 leading-tight">
+          Implementation Plan
+        </h1>
+        <div className="w-24 h-1 bg-cyan-400 mx-auto mb-4"></div>
+        <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          A three-phase roadmap for developing, regulating, and deploying nanomedicine in Canada.
+        </p>
+      </section>
 
       {/* CAROUSEL */}
       <div className="relative w-full max-w-5xl min-h-[80vh] flex items-center justify-center overflow-visible">

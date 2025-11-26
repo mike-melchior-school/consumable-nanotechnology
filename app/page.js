@@ -7,7 +7,7 @@ export default function HomePage() {
     <main className="max-w-5xl mx-auto px-6 py-12 space-y-16">
 
       {/* HERO SECTION - More compact and impactful */}
-      <section className="text-center pt-12">
+      <section className="text-center pt-8">
         <h1 className="text-4xl font-bold text-cyan-400 mb-4 leading-tight">
           Medical Applications of Nanotechnology
         </h1>

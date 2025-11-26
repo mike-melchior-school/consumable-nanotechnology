@@ -98,16 +98,15 @@ export default function NanoIntro() {
   return (
     <main className="relative w-full min-h-screen flex flex-col justify-center items-center bg-slate-900 py-8">
       
-      {/* Compact Header */}
-      <div className="text-center mb-8 z-10 px-4">
-        <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
-          THE FUTURE OF MEDICINE
+      <section className="text-center pt-8">
+        <h1 className="text-4xl font-bold text-cyan-400 mb-4 leading-tight">
+          The Future of Medicine
         </h1>
-        <div className="w-20 h-0.5 bg-cyan-400 mx-auto mb-2"></div>
-        <p className="text-cyan-200 text-sm font-light">
-         Targeted Therapies & Diagnostic Solutions
+        <div className="w-24 h-1 bg-cyan-400 mx-auto mb-4"></div>
+        <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Targeted Therapies & Diagnostic Solutions
         </p>
-      </div>
+      </section>
 
       {/* Spiral Cards Container - Perfect size maintained */}
       <div className="relative w-full max-w-6xl h-[70vh] flex items-center justify-center mb-8 px-4">
