@@ -1,148 +1,138 @@
+"use client";
+
 import ProblemStatement from "./components/ProblemStatement";
 
 export default function HomePage() {
   return (
-    <main className="max-w-6xl mx-auto px-6 py-16 space-y-24">
+    <main className="max-w-5xl mx-auto px-6 py-12 space-y-16">
 
-      {/* HERO SECTION */}
-      <section className="text-center pt-20">
-        <h1 className="text-5xl font-bold text-gray-900 mb-6">
+      {/* HERO SECTION - More compact and impactful */}
+      <section className="text-center pt-12">
+        <h1 className="text-4xl font-bold text-cyan-400 mb-4 leading-tight">
           Medical Applications of Nanotechnology
         </h1>
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Exploring how consumable nanotechnology can reshape modern medicine,
-          improve treatment outcomes, and strengthen Canada’s global competitiveness.
+        <div className="w-24 h-1 bg-cyan-400 mx-auto mb-4"></div>
+        <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Transforming healthcare through consumable nanotechnology—improving treatment outcomes 
+          and strengthening Canada's global competitiveness.
         </p>
       </section>
 
       {/* PROBLEM STATEMENT */}
       <ProblemStatement />
 
-      {/* WHAT IS NANOTECHNOLOGY */}
-      <section className="bg-white p-10 rounded-2xl shadow-md border border-gray-200">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">
+      {/* WHAT IS NANOTECHNOLOGY - Compact card */}
+      <section className="bg-slate-800 p-8 rounded-xl border border-slate-600">
+        <h2 className="text-2xl font-bold text-cyan-400 mb-4">
           What Is Nanotechnology?
         </h2>
+        <div className="space-y-3 text-gray-300">
+          <p>
+            Nanotechnology involves manipulating materials at the nanoscale (1–100 nanometers),
+            enabling the design of ultra-small particles with specific biological functions that
+            interact precisely with cells and tissues.
+          </p>
+          <p>
+            In <span className="font-semibold text-cyan-300">consumable nanotechnology</span>,
+            nanoparticles deliver drugs directly to disease sites, improve treatment accuracy,
+            reduce side effects, and enable controlled release—especially crucial for 
+            difficult-to-treat conditions like pediatric brain tumors.
+          </p>
+        </div>
+      </section>
 
-        <p className="text-gray-700 leading-relaxed">
-          Nanotechnology involves manipulating materials at the nanoscale (1–100 nanometers),
-          allowing scientists to design ultra-small particles with specific biological functions.
-          These nanoparticles can interact precisely with cells, tissues, and biological systems.
-        </p>
-
-        <p className="mt-4 text-gray-700 leading-relaxed">
-          In the context of <span className="font-semibold">consumable nanotechnology</span>,
-          nanoparticles can deliver drugs directly to disease sites, improve treatment accuracy,
-          reduce side effects, and enable controlled release inside the body. This is especially
-          important for difficult-to-treat conditions, such as pediatric brain tumors.
+      {/* CONTEXTUAL BACKGROUND - More concise */}
+      <section className="bg-gradient-to-r from-cyan-900 to-slate-800 p-8 rounded-xl border border-cyan-700">
+        <h2 className="text-2xl font-bold text-white mb-4">Contextual Background</h2>
+        <p className="text-gray-200 leading-relaxed">
+          While countries worldwide rapidly advance consumable nanotech for precision medicine, 
+          Canada's progress has slowed. This innovation gap threatens future patient outcomes 
+          and requires strategic national adoption.
         </p>
       </section>
 
-      {/* CONTEXTUAL BACKGROUND */}
-      <section className="bg-blue-50 p-10 rounded-2xl border border-blue-200">
-        <h2 className="text-3xl font-bold text-blue-900 mb-6">Contextual Background</h2>
-        <p className="text-gray-800 leading-relaxed">
-          Nanotechnology is transforming global healthcare innovation. Countries around the world
-          are rapidly advancing consumable nanotech for precision medicine—yet Canada’s progress has
-          been noticeably slower. This gap threatens future innovation and patient outcomes.
-          Understanding why this slowdown exists is essential for effective national adoption.
-        </p>
-      </section>
+      {/* BENEFITS & IMPACT - Tighter layout */}
+      <section>
+        <div className="text-center mb-8">
+          <h2 className="text-3xl font-bold text-cyan-400 mb-2">Benefits & Impact</h2>
+          <div className="w-20 h-1 bg-cyan-400 mx-auto"></div>
+        </div>
 
-      {/* BENEFITS & IMPACT — THREE CRITICAL BENEFITS */}
-      <section className="space-y-10">
-        <h2 className="text-3xl font-bold text-gray-900">Benefits & Impact</h2>
-
-        {/* GRID OF THREE BENEFITS */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-          {/* 1 — Targeted Drug Delivery */}
-          <div className="bg-white p-8 rounded-2xl shadow border">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Highly Targeted Drug Delivery</h3>
-            <p className="text-gray-700 leading-relaxed">
-              Direct delivery to specific cells or tissues, including the ability to cross
-              biological barriers such as the blood–brain barrier. This maximizes treatment
-              impact and minimizes damage to healthy tissue.
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-slate-800 p-6 rounded-xl border border-slate-600 hover:border-cyan-500 transition-colors">
+            <h3 className="text-lg font-bold text-cyan-400 mb-3">Targeted Drug Delivery</h3>
+            <p className="text-sm text-gray-300 leading-relaxed">
+              Direct delivery to specific cells, crossing biological barriers like the blood-brain 
+              barrier to maximize impact and minimize damage to healthy tissue.
             </p>
           </div>
 
-          {/* 2 — Improved Treatment Efficacy */}
-          <div className="bg-white p-8 rounded-2xl shadow border">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Improved Treatment Efficacy</h3>
-            <p className="text-gray-700 leading-relaxed">
-              Nanoparticles enable sustained drug release and deeper penetration into diseased
-              tissues. This results in enhanced therapeutic performance and higher success rates.
+          <div className="bg-slate-800 p-6 rounded-xl border border-slate-600 hover:border-cyan-500 transition-colors">
+            <h3 className="text-lg font-bold text-cyan-400 mb-3">Improved Treatment Efficacy</h3>
+            <p className="text-sm text-gray-300 leading-relaxed">
+              Sustained drug release and deeper tissue penetration result in enhanced therapeutic 
+              performance and higher success rates.
             </p>
           </div>
 
-          {/* 3 — Reduced Side Effects */}
-          <div className="bg-white p-8 rounded-2xl shadow border">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Reduced Side Effects</h3>
-            <p className="text-gray-700 leading-relaxed">
-              By lowering systemic exposure to toxic drugs, nanotechnology reduces adverse
-              reactions, hospitalizations, and improves overall quality of life—especially
-              for vulnerable patients.
+          <div className="bg-slate-800 p-6 rounded-xl border border-slate-600 hover:border-cyan-500 transition-colors">
+            <h3 className="text-lg font-bold text-cyan-400 mb-3">Reduced Side Effects</h3>
+            <p className="text-sm text-gray-300 leading-relaxed">
+              Lower systemic exposure to toxic drugs reduces adverse reactions and improves 
+              quality of life for vulnerable patients.
             </p>
           </div>
         </div>
       </section>
 
-      {/* TARGETED DELIVERY CASE STUDY */}
-      <section className="bg-white p-10 rounded-2xl shadow-md border border-gray-200">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">
-          Example: Targeted Delivery in Pediatric Brain Tumors
+      {/* TARGETED DELIVERY CASE STUDY - More scannable */}
+      <section className="bg-slate-800 p-8 rounded-xl border border-slate-600">
+        <h2 className="text-2xl font-bold text-cyan-400 mb-4">
+          Case Study: Pediatric Brain Tumors
         </h2>
+        <div className="space-y-4 text-gray-300">
+          <p>
+            Researchers engineered drug-loaded nanoparticles using sugar-based molecules that 
+            bind to proteins on activated blood vessels—natural "homing signals" from tumors.
+          </p>
+          <p>
+            These nanoparticles "trick" the body into transporting them across the blood-brain 
+            barrier directly to tumors, enabling precise treatment using natural biological pathways.
+          </p>
+          <p className="font-medium text-cyan-300">
+            Result: Improved therapeutic impact and reduced toxicity in medulloblastoma models.
+          </p>
+        </div>
+      </section>
 
-        <p className="text-gray-700 leading-relaxed mb-6">
-          Researchers at Mount Sinai Health System and Memorial Sloan Kettering Cancer Center
-          engineered drug-loaded nanoparticles using sugar-based molecules (fucoidan). These bind
-          to proteins expressed on activated blood vessels—natural “homing signals” created by
-          inflammation or tumor sites.
-        </p>
-
-        <p className="text-gray-700 leading-relaxed mb-6">
-          Because the brain naturally allows these sugar-based molecules to cross the
-          blood–brain barrier, the nanoparticles “trick” the body into transporting them directly
-          to the tumor. This enables isolated, highly precise treatment using natural biological
-          pathways.
-        </p>
-
-        <p className="text-gray-700 leading-relaxed font-medium">
-          <span className="font-semibold">The result:</span> In mouse models of medulloblastoma,
-          this approach improved therapeutic impact and reduced toxicity—including bone toxicity
-          commonly seen in children undergoing traditional treatment.
+      {/* MARKET OVERVIEW - Concise */}
+      <section className="bg-gradient-to-r from-slate-800 to-cyan-900 p-8 rounded-xl border border-cyan-700">
+        <h2 className="text-2xl font-bold text-cyan-400 mb-4">Market Outlook</h2>
+        <p className="text-gray-200">
+          Global nanomedicine market projected to grow by <strong>$200+ billion USD by 2030</strong>. 
+          Canada must accelerate adoption to maintain competitive position.
         </p>
       </section>
 
-      {/* MARKET OVERVIEW */}
-      <section className="bg-gray-50 p-10 rounded-2xl border border-gray-200">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">
-          Nanomedicine Market Outlook
-        </h2>
-
-        <p className="text-gray-700 leading-relaxed">
-          The global nanomedicine market is expected to grow by over <strong>$200 billion USD</strong>
-          by 2030. North America holds the majority market share—yet Canada is at risk of falling
-          behind without coordinated investment and clinical adoption strategies.
-        </p>
-      </section>
-
-      {/* CANADA'S NATIONAL POSITION */}
-      <section className="bg-green-50 p-10 rounded-2xl border border-green-200">
-        <h2 className="text-3xl font-bold text-green-900 mb-6">
-          Canada’s Current Standing
-        </h2>
-
-        <ul className="space-y-3 text-gray-800 leading-relaxed list-disc pl-6">
-          <li>National Research Council of Canada has partnered with University of Alberta in a new $10M CAD joint investment.</li>
-          <li>Federal government contributed $1M CAD to support the U of Alberta nanoFAB facility.</li>
-          <li>Next Gen Manufacturing Canada received $230M CAD to support nanomanufacturing initiatives.</li>
+      {/* CANADA'S POSITION - Clean list */}
+      <section className="bg-slate-800 p-8 rounded-xl border border-slate-600">
+        <h2 className="text-2xl font-bold text-cyan-400 mb-4">Canada's Current Standing</h2>
+        <ul className="space-y-2 text-gray-300 mb-4">
+          <li className="flex items-start">
+            <span className="text-cyan-400 mr-2">•</span>
+            $10M CAD joint investment between NRC and University of Alberta
+          </li>
+          <li className="flex items-start">
+            <span className="text-cyan-400 mr-2">•</span>
+            $1M CAD federal support for U of Alberta nanoFAB facility
+          </li>
+          <li className="flex items-start">
+            <span className="text-cyan-400 mr-2">•</span>
+            $230M CAD for Next Gen Manufacturing Canada nanomanufacturing
+          </li>
         </ul>
-
-        <p className="mt-6 text-gray-800 leading-relaxed">
-          These investments position Canada for growth, but much stronger coordination and
-          implementation planning is needed to fully capture the rapidly expanding global
-          nanomedicine market.
+        <p className="text-gray-300 text-sm">
+          Strong foundation exists, but coordinated implementation is needed to capture global market share.
         </p>
       </section>
 

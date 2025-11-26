@@ -14,8 +14,8 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="w-full py-4 shadow-sm">
-      <ul className="flex justify-center gap-8 text-lg font-medium">
+    <nav className="w-full py-4">
+      <ul className="flex justify-center gap-6 text-lg font-medium">
         {links.map((l) => {
           const isActive = pathname === l.href;
 
@@ -23,16 +23,11 @@ export default function Navbar() {
             <li key={l.href}>
               <a
                 href={l.href}
-                // className={`transition-colors border-b-2 pb-1 ${
-                //   isActive
-                //     ? "border-blue-600"
-                //     : "border-transparent hover:border-gray-300 text-gray-700"
-                // }`}
                 className={`
-                  px-4 py-2 rounded-xl transition-all duration-200
+                  px-6 py-3 rounded-xl transition-all duration-200 font-medium
                   ${isActive
-                    ? "bg-blue-600 text-white shadow-sm"
-                    : "text-gray-700 hover:bg-gray-100"
+                    ? "bg-cyan-600 text-white shadow-lg shadow-cyan-600/30 border border-cyan-500"
+                    : "text-slate-300 hover:bg-slate-700/50 hover:text-white border border-transparent"
                   }
                 `}
               >
