@@ -2,9 +2,10 @@ export default function ProblemStatement() {
     return (
         <section className="w-full py-16">
             <div className="max-w-4xl mx-auto px-6">
-                <h2 className="text-center text-3xl font-bold text-gray-900 mb-10">
+                <h2 className="text-4xl font-bold text-cyan-400 mb-4 leading-tight text-center">
                     Problem Statement
                 </h2>
+                <div className="w-24 h-1 bg-cyan-400 mx-auto mb-4"></div>
 
                 <div className="relative bg-white p-10 rounded-2xl shadow-md border border-gray-200">
                     {/* Decorative opening quote */}
